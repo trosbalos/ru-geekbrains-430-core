@@ -14,19 +14,18 @@ import java.util.Set;
 
 public class Phonebook {
 
-    private Map<String, HashSet<Object>> listOfNumbers = new HashMap<>();
+    private Map<String, HashSet<String>> listOfNumbers = new HashMap<>();
 
     public void add(String name, String phone) {
         if (!listOfNumbers.containsKey(name)) {
-            listOfNumbers.put(name, new HashSet<>());
+            listOfNumbers.put(name, new HashSet<String>());
         }
-        Set<Object> values = listOfNumbers.get(name);
+        Set<String> values = listOfNumbers.get(name);
         values.add(phone);
     }
 
-    public Set<Object> get(String name) {
-        Set<Object> values = listOfNumbers.get(name);
-        return values;
+    public Set<String> get(String name) {
+        return listOfNumbers.get(name);
     }
 }
 
