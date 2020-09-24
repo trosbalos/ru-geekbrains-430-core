@@ -16,7 +16,7 @@ public class Wall implements Obstacle {
 
     @Override
     public String getName() {
-        return name ;
+        return name;
     }
 
     public Wall(int height, String name) {

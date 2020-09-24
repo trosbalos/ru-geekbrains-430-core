@@ -7,7 +7,9 @@ public interface Athlete {
     void jump(Obstacle obstacle);
 
     int getDistance();
+
     int getHeight();
+
     String getName();
 
 

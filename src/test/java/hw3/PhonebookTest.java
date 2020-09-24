@@ -1,6 +1,5 @@
 package hw3;
 
-
 import org.assertj.core.api.Assertions;
 import org.junit.Assert;
 import org.junit.Test;
@@ -15,11 +14,11 @@ public class PhonebookTest {
         phonebook.add("Yuri", "89999999999");
         phonebook.add("Yuri", "88888888888");
 
-        Set<String> numbers = phonebook.get("Yuri");
+        Set<Object> numbers = phonebook.get("Yuri");
 
         Assert.assertEquals(2 ,numbers.size());
 
-        Assertions.assertThat(numbers).containsExactlyInAnyOrder("89999999999", "88888888888");
+    Assertions.assertThat(numbers).containsExactlyInAnyOrder("89999999999", "88888888888");
     }
 
     @Test
@@ -27,7 +26,7 @@ public class PhonebookTest {
     public void testEmptyPhoneBook(){
         Phonebook phonebook = new Phonebook();
 
-        Set<String> numbers = phonebook.get("Yuri");
+        Set<Object> numbers = phonebook.get("Yuri");
 
         Assert.assertTrue(numbers.isEmpty());
     }
@@ -38,7 +37,7 @@ public class PhonebookTest {
     public void testEmptyPhoneBookWithException(){
         Phonebook phonebook = new Phonebook();
 
-        Set<String> numbers = phonebook.get("Yuri");
+        Set<Object> numbers = phonebook.get("Yuri");
 
         Assert.assertTrue(numbers.isEmpty());
     }
