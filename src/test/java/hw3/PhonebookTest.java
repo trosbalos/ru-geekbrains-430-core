@@ -33,7 +33,9 @@ public class PhonebookTest {
 
 
     @Test(expected = NullPointerException.class)
+
     //Если вы считается, что это правильно выбрасывать ошибки и хотите проверить, что они точно выброшены
+    //Приминил в hw2
     public void testEmptyPhoneBookWithException(){
         Phonebook phonebook = new Phonebook();
 

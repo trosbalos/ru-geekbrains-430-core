@@ -24,9 +24,5 @@ public class Wall implements Obstacle {
         this.name = name;
     }
 
-    @Override
-    public void info() {
-        System.out.println(" через стену " + this.name + " высотой " + this.height);
-        System.out.println();
-    }
+
 }

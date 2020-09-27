@@ -4,6 +4,15 @@ public class Human implements Athlete {
     int distance;
     int height;
     String name;
+    boolean isReady;
+
+    public boolean isReady() {
+        return isReady;
+    }
+
+    public void setReady(boolean ready) {
+        isReady = ready;
+    }
 
     @Override
     public String getName() {
@@ -18,10 +27,11 @@ public class Human implements Athlete {
         return height;
     }
 
-    public Human(int distance, int height, String name) {
+    public Human(int distance, int height, String name,boolean isReady) {
         this.distance = distance;
         this.height = height;
         this.name = name;
+        this.isReady = isReady;
     }
 
     public void run(Obstacle obstacle) {

@@ -4,10 +4,19 @@ public class Cat implements Athlete {
     int distance;
     int height;
     String name;
+    boolean isReady;
 
     @Override
     public String getName() {
         return name;
+    }
+
+    public boolean isReady() {
+        return isReady;
+    }
+
+    public void setReady(boolean ready) {
+        isReady = ready;
     }
 
     @Override
@@ -20,10 +29,11 @@ public class Cat implements Athlete {
         return height;
     }
 
-    public Cat(int distance, int height, String name) {
+    public Cat(int distance, int height, String name,boolean isReady) {
         this.distance = distance;
         this.height = height;
         this.name = name;
+        this.isReady = isReady;
     }
 
     public void run(Obstacle obstacle) {

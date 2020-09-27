@@ -12,5 +12,8 @@ public interface Athlete {
 
     String getName();
 
+    boolean isReady();
+    void setReady(boolean ready);
+
 
 }

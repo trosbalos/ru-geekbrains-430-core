@@ -20,12 +20,7 @@ public class Runningtrack implements Obstacle {
         this.name = name;
     }
 
-    @Override
-    public void info() {
-        System.out.println(" по беговой дорожке " + this.name + " длиной " + this.distance);
-        System.out.println();
 
-    }
 
     @Override
     public int getHeight() {

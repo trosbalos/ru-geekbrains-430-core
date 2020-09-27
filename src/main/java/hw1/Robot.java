@@ -4,7 +4,15 @@ public class Robot implements Athlete {
     int distance;
     int height;
     String name;
+    boolean isReady;
 
+    public boolean isReady() {
+        return isReady;
+    }
+
+    public void setReady(boolean ready) {
+        isReady = ready;
+    }
     @Override
     public String getName() {
         return name;
@@ -18,10 +26,11 @@ public class Robot implements Athlete {
         return height;
     }
 
-    public Robot(int distance, int height, String name) {
+    public Robot(int distance, int height, String name,boolean isReady) {
         this.distance = distance;
         this.height = height;
         this.name = name;
+        this.isReady = isReady;
     }
 
 
