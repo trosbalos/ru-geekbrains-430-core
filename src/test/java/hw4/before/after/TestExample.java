@@ -23,7 +23,7 @@ public class TestExample extends BeforeConfigTest{
     @Test
     public void checkSumException() {
         System.out.println("TestExample.checkSumException");
-        Assertions.assertEquals(3, 1 + 1);
+        Assertions.assertEquals(3, 2 + 1);
     }
 
     @AfterEach

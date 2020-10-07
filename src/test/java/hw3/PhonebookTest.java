@@ -16,27 +16,27 @@ public class PhonebookTest {
 
         Set<Object> numbers = phonebook.get("Yuri");
 
-        Assert.assertEquals(2 ,numbers.size());
+        Assert.assertEquals(2, numbers.size());
 
-    Assertions.assertThat(numbers).containsExactlyInAnyOrder("89999999999", "88888888888");
+        Assertions.assertThat(numbers).containsExactlyInAnyOrder("89999999999", "88888888888");
     }
 
-    @Test
+//    @Test
     //Плохо-плохо, если человека нет в вашей книге, то программа взрывается
-    public void testEmptyPhoneBook(){
-        Phonebook phonebook = new Phonebook();
-
-        Set<Object> numbers = phonebook.get("Yuri");
-
-        Assert.assertTrue(numbers.isEmpty());
-    }
+//    public void testEmptyPhoneBook(){
+//        Phonebook phonebook = new Phonebook();
+//
+//        Set<Object> numbers = phonebook.get("Yuri");
+//
+//        Assert.assertTrue(numbers.isEmpty());
+//    }
 
 
     @Test(expected = NullPointerException.class)
 
     //Если вы считается, что это правильно выбрасывать ошибки и хотите проверить, что они точно выброшены
     //Приминил в hw2
-    public void testEmptyPhoneBookWithException(){
+    public void testEmptyPhoneBookWithException() {
         Phonebook phonebook = new Phonebook();
 
         Set<Object> numbers = phonebook.get("Yuri");

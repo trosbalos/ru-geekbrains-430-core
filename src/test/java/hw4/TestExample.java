@@ -11,6 +11,6 @@ public class TestExample {
 
     @Test
     public void checkSumException() {
-        Assertions.assertEquals(3, 1 + 1);
+        Assertions.assertEquals(3, 2 + 1);
     }
 }

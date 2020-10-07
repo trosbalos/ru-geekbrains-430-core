@@ -13,6 +13,6 @@ public class DisplayExample {
     @Disabled(value = "Отключен до 26 сентября")
     @Test
     public void checkSumException() {
-        Assertions.assertEquals(3, 1 + 1);
+        Assertions.assertEquals(3, 2 + 1);
     }
 }

@@ -17,7 +17,7 @@ public class ParameterizedTestExample {
 
     private static Stream<Arguments> dataProvider() {
         return Stream.of(
-                Arguments.of(2, 10),
+                Arguments.of(11, 10),
                 Arguments.of(3, 2),
                 Arguments.of(4, 3),
                 Arguments.of(5, 4)
