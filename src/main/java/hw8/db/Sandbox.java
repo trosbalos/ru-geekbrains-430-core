@@ -40,7 +40,7 @@ public class Sandbox {
     private static DataSource prepareDataSource() throws SQLException {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setUser("root");
-        dataSource.setPassword("FuboSam381");
+        dataSource.setPassword("pass");
         dataSource.setUrl("jdbc:mysql://localhost:3306/geekbrains");
         dataSource.setServerTimezone("UTC");
         return dataSource;
