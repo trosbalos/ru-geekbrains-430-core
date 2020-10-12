@@ -59,7 +59,7 @@ public class UserRepositoryTest {
             }
             Assert.assertEquals(result, "No Bob");
         }
-        rs.last();
+
         connection.close();
     }
 
