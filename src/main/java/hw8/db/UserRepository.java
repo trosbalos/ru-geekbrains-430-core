@@ -97,7 +97,7 @@ public void addToUsersFromString(String strToParse) throws SQLException {
         Connection connection = dataSource.getConnection();
         Statement addUserStatement = connection.createStatement();
 //      Bob 32 bob32@gmail.com
-//      Тут я обрабатывал ощибку: You have an error in your SQL syntax
+//      Тут я обрабатывал ошибку: You have an error in your SQL syntax
 //      System.out.println("INSERT INTO geekbrains.users (name, age, email) VALUES ('"+name+"','"+age+"','"+email+"')");
         int resultSetDelete = addUserStatement.executeUpdate(
                 "INSERT INTO geekbrains.users (name, age, email) VALUES ('"+name+"','"+age+"','"+email+"')");
@@ -107,13 +107,13 @@ public void addToUsersFromString(String strToParse) throws SQLException {
     }
 
 
-    public static void main(String[] args) throws SQLException {
-        UserRepository userRepository = new UserRepository();
-//        userRepository.showUsersByAge(13L,20L);
-//          userRepository.deleteByName("Bob");
+//    public static void main(String[] args) throws SQLException {
+//        UserRepository userRepository = new UserRepository();
+//        userRepository.showUsersByMinMaxAge(13L,20L);
+//        userRepository.deleteByName("Bob");
 //        userRepository.addToUsersFromString("Bob 32 bob32@gmail.com");
-userRepository.usersTablePrinter("users");
-    }
+//        userRepository.usersTablePrinter("users");
+//    }
 
 
 }
